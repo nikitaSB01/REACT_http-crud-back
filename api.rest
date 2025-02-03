@@ -1,0 +1,16 @@
+@url = http://localhost:7070
+
+### Получение всех заметок
+GET {{url}}/notes
+
+### Добавление заметки
+POST {{url}}/notes
+Content-Type: application/json
+
+{
+    "id": 0,
+    "content": "First Note"
+}
+
+### Удаление заметки (например, с id = 3)
+DELETE {{url}}/notes/3
